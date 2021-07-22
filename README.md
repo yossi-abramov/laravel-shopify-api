@@ -36,4 +36,5 @@ php artisan serve
 ## Routes
 
 /orders => fetch all orders
+
 /orders/{order_id} => fetch order items by order id
