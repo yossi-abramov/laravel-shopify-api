@@ -16,18 +16,19 @@ composer install
 SHOPIFY_API_KEY=
 SHOPIFY_API_PASSWORD=
 SHOPIFY_SHOP_DOMAIN=
-SHOPIFY_VERSION=
 ```
 
 _Important:_ `SHOPIFY_SHOP_DOMAIN` should not have `http` or `https`.
 
-3. Run migrations and seed the database with:
+3. Create a `./database/database.sqlite` file.
+
+4. Run migrations and seed the database with:
 
 ```
 php artisan migrate --seed
 ```
 
-4. Run Laravel's local dev serve:
+5. Run Laravel's local dev serve:
 
 ```
 php artisan serve
