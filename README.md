@@ -6,6 +6,12 @@
 composer install
 ```
 
+## Generate application encryption key
+
+```
+php artisan key:generate
+```
+
 ## Set Laravel .env
 
 1. Rename `.env.example` to `.env`
