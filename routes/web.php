@@ -13,6 +13,8 @@ use App\Http\Controllers\OrdersController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/orders', [OrdersController::class, 'index']);
-Route::get('/orders/{order_id}', [OrdersController::class, 'getOrderItems']);
+Route::get('/', function(){
+    return redirect('/orders');
+});
+Route::get('/orders', [OrdersController::class, 'index'])->name('orders');
+Route::get('/orders/{order_id}', [OrdersController::class, 'getOrderItems'])->name('order');
